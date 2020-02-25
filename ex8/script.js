@@ -6,16 +6,35 @@
     SUPER BONUS) Make each task editable
 */
 
-var description = document.getElementById('dscription').value;
+var description = document.getElementById('dscription');
 var addButton = document.getElementById('add-button');
 var todoList = document.getElementById('todo-list');
 
-addButton.addEventListener('click', function() {
-    description = "";
-    var newList = document.createElement('li');
-    description = newList.innerHTML;
+//addButton.addEventListener('click', function() {
+//    inputText = description.value;
+//    inputText = "";
+//    var newList = document.createElement('li');
+//    inputText = newList.innerHTML;
+//
+//    todoList.appendChild(newList);
+//    newList.appendChild(inputText);
+//
+//});
 
-    todoList.appendChild(newList);
-    newList.appendChild(description);
+
+
+addButton.addEventListener('click', function() {
+    var newItem = document.createElement('li');
+    newItem.classList.add('newItem');
+    newItem.addEventListener('click', function() {
+        this.classList.add('finish');
+
+    });
+
+    newItem.innerHTML = description.value + "now!";
+
+    console.log(description.value)
+    list.appendChild(newItem);
+    description.value = "";
 
 });

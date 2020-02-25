@@ -1,5 +1,7 @@
 var container1 = document.getElementById('container');
 container1.style.margin = " 0px 100px";
+
+//create nav and its elements
 var nav1 = document.createElement('nav');
 var ulist = document.createElement('ul');
 var list1 = document.createElement('li', );
@@ -23,7 +25,7 @@ list2.style.display = "inline-block";
 list2.style.paddingLeft = "20px";
 
 var list3 = document.createElement('li', );
-var navText3 = document.createTextNode('catagories');
+var navText3 = document.createTextNode('Catagories');
 list3.appendChild(navText3);
 ulist.appendChild(list3);
 nav1.appendChild(ulist);
@@ -31,6 +33,7 @@ container1.appendChild(nav1);
 list3.style.display = "inline-block";
 list3.style.paddingLeft = "20px";
 
+// creating the first div with curse of the current review
 var div1 = document.createElement('div');
 var header1 = document.createElement('h2');
 var textNode1 = document.createTextNode('Curse of the current review');
@@ -45,7 +48,7 @@ div1.appendChild(paragraph1);
 container1.appendChild(div1);
 div1.style.backgroundColor = "lightgrey";
 div1.style.margin = " 0px 20px";
-
+// creating the second div and its elements inside iot 
 var div2 = document.createElement('div');
 var header2 = document.createElement('h3');
 var textNode2 = document.createTextNode('Hello WatchKit');
@@ -61,7 +64,7 @@ div2.appendChild(paragraph2);
 container1.appendChild(div2);
 div2.style.margin = " 0px 20px";
 header2.style.color = "blue";
-
+// nav bar for the like and commment orange and the text  and the header above
 var nav2 = document.createElement('nav');
 var ulist2 = document.createElement('ul');
 var list21 = document.createElement('li');
@@ -83,7 +86,7 @@ div2.appendChild(nav2);
 list22.style.display = "inline-block";
 list22.style.paddingLeft = "20px";
 
-
+// nav bar for the like and commment orange bar and the text , header above
 var div3 = document.createElement('div');
 var header3 = document.createElement('h3');
 var textNode3 = document.createTextNode('Introduction to swift');
@@ -120,3 +123,5 @@ nav3.appendChild(ulist3);
 div3.appendChild(nav3);
 list32.style.display = "inline-block";
 list32.style.paddingLeft = "20px";
+
+console.log(list32);
