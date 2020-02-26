@@ -48,7 +48,7 @@ div1.appendChild(paragraph1);
 container1.appendChild(div1);
 div1.style.backgroundColor = "lightgrey";
 div1.style.margin = " 0px 20px";
-// creating the second div and its elements inside iot 
+// creating the second div and its elements inside it
 var div2 = document.createElement('div');
 var header2 = document.createElement('h3');
 var textNode2 = document.createTextNode('Hello WatchKit');
